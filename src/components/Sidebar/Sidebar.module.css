@@ -1,0 +1,109 @@
+.sidebar {
+    position: fixed;
+    width: 250px;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    background-color: #fff;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+
+.filterSection {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.filterSection h3 {
+    margin-bottom: 10px;
+    font-size: .8rem;
+}
+
+.filterSection select, 
+.filterSection input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+.filterSection::placeholder{
+    font-size: 12px !important;
+}
+.p-dropdown .p-dropdown-label.p-placeholder{
+    font-size: 12px !important;
+}
+.sideButton{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex: 1;
+    button{
+        padding: 10px 20px;
+        width: 100%;
+        border: none;
+    }
+}
+.filterButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: #91e595;
+    color: #406c42;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.clearButton{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: #ff9a9a;
+    color: #b53636;
+    font-weight: bold;
+    border-radius: 5px;
+}
+@media screen and (min-width: 768px) {
+    .md\:w-14rem {
+         width: auto !important; 
+    }
+}
+
+.sidebar.open {
+    transform: translateX(0); /* Açık olduğunda görünür */
+}
+
+.toggleButton {
+    display: none; /* Varsayılan olarak gizli */
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    background: #2196f3;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.toggleButton.open {
+    background: #d32f2f; /* Açıkken kırmızı renkte */
+}
+
+@media (max-width: 768px) {
+    .toggleButton {
+        display: block; /* 768px altında göster */
+    }
+    .sidebar {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        transform: translateX(-100%); /* Başlangıçta gizli */
+        transition: transform 0.3s ease;
+        z-index: 1000;
+    }
+}

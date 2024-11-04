@@ -1,0 +1,71 @@
+.productElements{
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.Card{
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background: #fff;
+    padding:10px;
+}
+.CardImg{
+    width: 50%;
+    height:10rem;
+    object-fit: contain;
+    border-radius: 8px;
+    border-bottom: 1px solid #ddd
+}
+h3{
+    font-size: .8em;
+    width:100%;
+    margin:0;
+    color:#000;
+    font-weight:500;
+    text-align:center;
+}
+.CardPrice{
+    font-size: 1em;
+    font-weight: 700;
+    color: #333;
+    margin:0;
+}
+.productInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-top: 8px;
+    font-size: 12px;
+}
+/* ProductCard.module.css */
+
+
+.productCards .rating .p-rating-item.p-rating-item-active .p-rating-icon {
+    color: #FFD700 !important; /* Renk sarı */
+}
+
+.productCards .rating .p-rating-item .p-rating-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.custom-toast .p-toast {
+    backdrop-filter: blur(10px) !important; /* Arka planı bulanıklaştırır */
+    background-color: rgba(255, 255, 255, 0.8); /* Yarı saydam bir beyaz arka plan */
+    border-radius: 8px; /* Köşeleri yuvarlatır */
+    padding: 16px; /* İç boşluk ekler */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Gölge ekler */
+}
